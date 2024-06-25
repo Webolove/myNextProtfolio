@@ -29,7 +29,7 @@ export default function Skills({ theme }) {
     ];
 
     return (
-        <section className="skills Container mb-[250px]">
+        <section className="skills Container">
 
             <div id="skills" className="skills_left" data-aos="fade-right">
 

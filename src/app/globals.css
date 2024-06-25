@@ -108,10 +108,10 @@ ul {
   list-style: none;
 }
 
-/* .grid {
+.myGrid {
   display: grid;
   gap: 1.5rem;
-} */
+}
 
 a {
   text-decoration: none;

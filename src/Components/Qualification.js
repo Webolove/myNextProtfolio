@@ -13,7 +13,7 @@ export default function Qualification({ theme }) {
     const h_and_title = !theme ? 'text-light_text_primary text-xl' : 'text-dark_text_primary text-xl';
     const timeline_icon_color = !theme ? 'bg-light_profile_bg' : 'bg-dark_profile_bg';
     const timeline_after_color = !theme ? 'after:bg-light_profile_bg' : 'after:bg-dark_profile_bg';
-    const timeline_info_color = !theme ? 'bg-light_surface_bg' : 'bg-dark_surface_bg';
+    const timeline_info_color = !theme ? '' : '';
     const qualification_text_color = !theme ? 'text-black' : 'text-white';
 
     return (
@@ -23,12 +23,12 @@ export default function Qualification({ theme }) {
 
             <div className="qualification__container ">
                 <div className="qualification__tabs">
-                    <div className={`qualification__button flex gap-1 place-items-center justify-between border border-[2px] border-transparent rounded-[12px] ${activeTab == "Education" ? 'active_tab' : 'Underline'} ${!theme ? 'text-light_text_secondary' : 'text-dark_text_secondary'} transition duration-200`} id="education" onClick={() => setActiveTab("Education")}>
+                    <div className={`qualification__button flex gap-1 place-items-center justify-between border border-[2px] border-transparent rounded-[12px] ${activeTab == "Education" ? 'active_tab border border-[2px] border-[crimson]' : 'Underline'} ${!theme ? 'text-light_text_secondary' : 'text-dark_text_secondary'} transition duration-200`} id="education" onClick={() => setActiveTab("Education")}>
                         <RiGraduationCapLine className='qualification__icon' />
                         <span>Education</span>
                     </div>
 
-                    <div className={`qualification__button flex gap-1 place-items-center justify-between border border-[2px] border-transparent rounded-[12px] ${activeTab == "Work" ? 'active_tab' : 'Underline'} ${!theme ? 'text-light_text_secondary' : 'text-dark_text_secondary'} transition duration-200`} id="work" onClick={() => setActiveTab("Work")}>
+                    <div className={`qualification__button flex gap-1 place-items-center justify-between border border-[2px] border-transparent rounded-[12px] ${activeTab == "Work" ? 'active_tab border border-[2px] border-[crimson]' : 'Underline'} ${!theme ? 'text-light_text_secondary' : 'text-dark_text_secondary'} transition duration-200`} id="work" onClick={() => setActiveTab("Work")}>
                         <MdWorkOutline className='qualification__icon' />
                         <span>Work</span>
                     </div>
