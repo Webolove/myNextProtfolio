@@ -1,0 +1,361 @@
+#Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 210px;
+}
+
+.contact_info,
+.contact_details,
+.contact_wrapper {
+    width: 85%;
+}
+
+.contact_info {
+    padding-top: 32px;
+    text-align: center;
+    height: fit-content;
+    margin-bottom: 22px;
+}
+
+.contact_title {
+    font-size: 38px;
+    letter-spacing: .1rem;
+}
+
+.contact_desc {
+    font-size: 22px;
+}
+
+.contact_details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact_type {
+    width: 30%;
+    min-width: 135px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 45px 24px;
+}
+
+.contact_type div{
+    font-size: 30px;
+}
+
+.contact_type span {
+    font-family: 'poppins';
+    font-size: 18px;
+    text-align: center;
+}
+
+.contact_wrapper {
+    margin-top: 50px;
+    border-radius: 12px;
+    min-height: 500px;
+    height: fit-content !important;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact_upbox,
+.contact_downbox {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+
+.contact_downbox {
+    position: absolute;
+    top: 0px;
+}
+
+.contact_upbox {
+    padding: 21px 45px;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.contact_downbox {
+    z-index: 1;
+}
+
+.blob_Box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.blob {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.blob1 {
+    width: 250px;
+    height: 250px;
+    top: -36px;
+    right: -47px;
+    background-image: conic-gradient(#e0c4fd, #8fc6fd);
+    animation: moveBlob1 0.9s ease-in 0s infinite alternate-reverse;
+}
+
+@keyframes moveBlob1 {
+    100% {
+        top: -56px;
+        right: -47px;
+    }
+
+    0% {
+        top: -37px;
+        right: -47px;
+    }
+}
+
+.blob2 {
+    width: 199px;
+    height: 199px;
+    bottom: -45px;
+    left: -30px;
+    background-image: radial-gradient(#ffb88c, #df6363);
+    animation: moveBlob2 0.7s ease-in 0s infinite alternate-reverse;
+}
+
+@keyframes moveBlob2 {
+    100% {
+        bottom: -65px;
+        left: -33px;
+    }
+
+    0% {
+        bottom: -46px;
+        left: -25px;
+    }
+}
+
+
+.contact_upbox form .form_data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 25px;
+}
+
+.contact_upbox form {
+    height: fit-content !important;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.form_group {
+    margin-top: 30px;
+}
+
+.form_group label,
+.service_title {
+    font-size: 21px;
+    font-family: poppins;
+    font-weight: 500;
+}
+
+.form_group input,
+.form_group textarea {
+    width: 100%;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: 'poppins';
+    font-weight: 400;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    outline: none;
+}
+
+.form_group textarea {
+    resize: none;
+}
+
+.submit_btn {
+    display: block !important;
+    width: fit-content;
+    margin: auto !important;
+    outline: none;
+    padding: 21px 33px;
+    font-size: 22px;
+    font-family: 'poppins';
+    letter-spacing: .1rem;
+    border-radius: 18px;
+    border: none;
+    color: white;
+    background-color: rgb(65, 105, 225);
+    cursor: pointer;
+}
+
+.sending {
+    position: relative;
+    left: 0px;
+}
+
+.submit_btn:hover .sending {
+    animation: sendIt 0.3s ease-in 0s 1 forwards;
+}
+
+@keyframes sendIt {
+    100% {
+        left: 15px;
+    }
+}
+
+.service_type {
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.SERVICE {
+    width: 45%;
+    padding: 18px 14px;
+    border-radius: 18px;
+    text-align: center;
+    font-size: 19px;
+    cursor: pointer;
+    font-family: 'poppins';
+    background-color: #f5fcf4;
+    transition: box-shadow 0.4s;
+}
+
+.service_type .activeService {
+    box-shadow: 3px 3px 12px orange;
+}
+
+@media only screen and (max-width: 799px) {
+    .contact_title {
+        font-size: 28px;
+    }
+
+    .contact_desc {
+        font-size: 21px;
+    }
+
+    .blob1 {
+        width: 100px;
+        height: 100px;
+        top: -6px;
+        right: -17px;
+    }
+
+    @keyframes moveBlob1 {
+        100% {
+            top: -36px;
+            right: -17px;
+        }
+
+        0% {
+            top: -8px;
+            right: -17px;
+        }
+    }
+
+    .blob2 {
+        width: 150px;
+        height: 150px;
+    }
+
+    #Contact {
+        margin-bottom: 100px;
+        padding-top: 10px;
+    }
+
+    .contact_upbox form .form_data {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .contact_wrapper {
+        height: fit-content;
+        padding-bottom: 30px;
+    }
+
+    .form_group label {
+        font-size: 16px;
+    }
+
+    .form_group input {
+        padding: 11px;
+    }
+
+    .contact_upbox form {
+        margin-bottom: 0px;
+    }
+
+    .contact_info,
+    .contact_details,
+    .contact_wrapper {
+        width: 90%;
+    }
+
+    .contact_type {
+        margin-top: 18px;
+        height: 100px;
+        padding-top: 0px;
+    }
+
+    .contact_type span {
+        font-size: 16px;
+    }
+
+    .contact_upbox span {
+        font-size: 21px !important;
+    }
+
+    .contact_upbox {
+        padding: 17px 21px;
+    }
+
+    .submit_btn {
+        padding: 14px 17px;
+        font-size: 17px;
+    }
+
+    .SERVICE {
+        padding: 15px 12px;
+        font-size: 17px;
+    }
+
+    .form_data .left {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #Email {
+        grid-column: 1/3;
+    }
+
+    .contact_type div{
+        font-size: 22px !important;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .form_data .left {
+        display: initial;
+    }
+}

@@ -1,0 +1,35 @@
+.scrollUp{
+    position: fixed;
+    cursor: pointer;
+    display: none;
+    z-index: 100;
+    
+}
+
+#scrollUp a{
+    text-decoration: none;
+}
+
+#scrollUp{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in;
+}
+
+.showScroll{
+    display: block;
+    transform: scale(2.3);
+}
+
+.scrollArrow{
+    font-size: 10px;
+    color: white;
+}
+
+@media screen and (max-width: 799px){
+    .scrollUp{
+        bottom: 11%;
+    }
+}

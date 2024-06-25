@@ -1,27 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --light_body_bg: #f7f8f9;
+  --light_surface_bg: #ffffff;
+  --light_text_primary: #091e42;
+  --light_text_secondary: #626f86;
+  --light_text_inverse: #f1f2f4;
+  --light_special: #ed27e0;
+  --light_border_color: #f1f2f3;
+  --light_profile_bg: #76abfa;
+
+  --dark_body_bg: #1a1625;
+  --dark_surface_bg: #2f2b3a;
+  --dark_text_primary: #76737e;
+  --dark_text_secondary: #908d96;
+  --dark_text_inverse: #303030;
+  --dark_special: #ed27e0;
+  --dark_profile_bg: #6fa8fd;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+/* Remove blue background on touch */
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+/* Removed blue background on touch */
+
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Same Style */
+.section {
+  padding: 2rem 0 3rem;
+}
+
+.section__title {
+  font-size: 1.5rem;
+  /* color: var(--text_primary); */
+}
+
+.section__subtitle {
+  display: block;
+  /* color: var(--text_secondary); */
+  font-size: .8rem;
+  margin-bottom: 3rem;
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 1.5rem;
+}
+
+/* Base */
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0px;
+  font-family: 'poppins', 'sans-serif';
+  padding: 0px;
+  transition: color 0.3s ease-in;
+  
+  transition: background-color 0.3s ease-in;
+  /* overflow: none; */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  /* color: var(--text_primary); */
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/* .grid {
+  display: grid;
+  gap: 1.5rem;
+} */
+
+a {
+  text-decoration: none;
+}
+
+a:active,
+a:focus,
+a:visited,
+a:hover {
+  background-color: transparent !important;
+  outline: none !important;
+}
+
+.Container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 55px;
+  margin-top: 100px;
+}
+
+
+/* 
+body {
+} */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }

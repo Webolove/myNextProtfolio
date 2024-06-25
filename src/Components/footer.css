@@ -1,0 +1,35 @@
+footer {
+    width: 100vw;
+    height: max-content;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin-top: 25px;
+
+    position: relative;
+    bottom: -10px;
+}
+
+.footer_desc,
+.footer_info {
+    text-align: center;
+}
+
+.footer_title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+    .footer_title {
+        font-size: 21px;
+    }
+
+    footer {
+        margin-bottom: 51px;
+    }
+}

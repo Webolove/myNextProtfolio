@@ -1,0 +1,114 @@
+.tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech_title {
+    font-size: 32px;
+}
+
+.tech_desc {
+    margin-bottom: 2rem;
+}
+
+.platform_icon {
+    width: 45px;
+    height: 45px;
+}
+
+
+.platform_name {
+    font-size: 23px;
+}
+
+.platform_icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.tech_container {
+    margin-top: 0px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.tech_content {
+    margin: 0 60px;
+    padding: 33px 15px;
+    overflow: hidden;
+    border-radius: 23px;
+}
+
+
+.alignPlatform {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 19px;
+    gap: 1rem;
+    border-radius: 23px;
+
+    margin: 23px 10px 23px 10px;
+}
+
+.platform_info {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 350px) {
+    .alignPlatform {
+        flex-direction: column;
+        width: fit-content;
+    }
+}
+
+
+@media screen and (max-width: 770px) {
+    .tech {
+        margin-top: 0px;
+        width: 93% !important;
+        margin: 0 auto;
+    }
+
+    .SwiperBtn {
+        display: none !important;
+    }
+
+    .tech_content {
+        margin: 0 15px;
+    }
+}
+
+
+@media screen and (max-width: 620px) and (min-width: 450px) {
+    .platform_name {
+        font-size: 18px;
+    }
+
+    .platform_info a,
+    .platform_info p {
+        font-size: 16px;
+    }
+
+    .platform {
+        min-width: 250px;
+    }
+}
+
+.Profile-btn {
+    padding: 5px 12px;
+    background-color:rgb(253 230 138);
+    border-radius: 17px;
+    margin-top: 0.5rem !important;
+    color: rgb(87 83 78);
+    font-family: "JetBrains Mono", monospace;;
+}

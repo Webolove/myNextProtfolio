@@ -1,0 +1,10 @@
+.profession .text{
+    position: relative;
+    font-size: 28px;
+}
+
+
+.profession .dynamic_text{
+    color: crimson;
+    font-weight: 600;
+}
