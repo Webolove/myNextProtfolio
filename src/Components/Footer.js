@@ -4,10 +4,10 @@ import './footer.css'
 export default function Footer({ theme }) {
 
     return (
-        <footer className={`footer ${theme ? 'bg-dark_text_inverse': 'bg-light_text_inverse'}`}>
-            <p className={`footer_title ${theme && 'text-light_text_inverse'}`}>Mudit Anand.</p>
-            <p className={`footer_desc ${theme && 'text-light_text_inverse'}`}>Inspired by the world, driven by creativity.</p>
-            <p className={`footer_info ${theme && 'text-light_text_inverse'}`}>@copyright 2023. All Rights Reserved.</p>
+        <footer className={`footer ${theme ? 'bg-[#303030]': 'bg-[#f1f2f4]'}`}>
+            <p className={`footer_title ${theme && 'text-#f1f2f4'}`}>Mudit Anand.</p>
+            <p className={`footer_desc ${theme && 'text-#f1f2f4'}`}>Inspired by the world, driven by creativity.</p>
+            <p className={`footer_info ${theme && 'text-#f1f2f4'}`}>@copyright 2023. All Rights Reserved.</p>
         </footer>
     )
 }
