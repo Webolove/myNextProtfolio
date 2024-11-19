@@ -11,7 +11,7 @@ export default function Skills({ theme }) {
     const skills_arr = [
         {
             title: "Languages",
-            content: "C, C++, HTML, CSS, Js, Python, Java, Solidity"
+            content: "C, C++, HTML, CSS, Js, Java, Solidity"
         }, {
             title: "Tech Stacks",
             content: "MongoDB, ExpressJs, ReactJs, NodeJs"
