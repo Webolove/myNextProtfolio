@@ -43,6 +43,13 @@ const myProj = {
       github: "https://github.com/Webolove/Second-Wife",
       imgSrc: "/Gallery/restaurant.png",
       imgAlt: "SecondWife"
+    }, {
+      title: "Sorting Visualiser",
+      desc: "A web application built in nextJs, where one can visualize how different sorting algorithm works on a given set of data.",
+      href: "https://sorting-visualiser-topaz.vercel.app/",
+      github: "https://github.com/Webolove/sortingVisualiser",
+      imgSrc: "/Gallery/sortingVisuliser.png",
+      imgAlt: "Sorting Visualiser"
     }
   ],
   Web3: [
@@ -84,6 +91,13 @@ const myProj = {
       github: "https://github.com/Webolove/Second-Wife",
       imgSrc: "/Gallery/restaurant.png",
       imgAlt: "SecondWife"
+    }, {
+      title: "Sorting Visualiser",
+      desc: "A web application built in nextJs, where one can visualize how different sorting algorithm works on a given set of data.",
+      href: "https://sorting-visualiser-topaz.vercel.app/",
+      github: "https://github.com/Webolove/sortingVisualiser",
+      imgSrc: "/Gallery/sortingVisuliser.png",
+      imgAlt: "Sorting Visualiser"
     }
   ],
   NextJs: [
@@ -109,6 +123,13 @@ const myProj = {
       github: "",
       imgSrc: "/Gallery/portfolio.png",
       imgAlt: "Portfolio"
+    }, {
+      title: "Sorting Visualiser",
+      desc: "A web application built in nextJs, where one can visualize how different sorting algorithm works on a given set of data.",
+      href: "https://sorting-visualiser-topaz.vercel.app/",
+      github: "https://github.com/Webolove/sortingVisualiser",
+      imgSrc: "/Gallery/sortingVisuliser.png",
+      imgAlt: "Sorting Visualiser"
     }
   ]
 }
