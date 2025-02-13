@@ -26,7 +26,7 @@ export default function Contact({ theme }) {
         e.preventDefault();
         setSending(true);
         try {
-            let data = { ...formData, Service: service }
+            let data = { ...formData, Service: service, Date: new Date().toLocaleString() }
             const msgRef = doc(firestore, "messages", formData.email);
             await setDoc(msgRef, data);
             toast.success("Thanks for reaching out! 😊")
