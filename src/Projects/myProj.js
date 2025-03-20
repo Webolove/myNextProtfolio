@@ -50,6 +50,13 @@ const myProj = {
       github: "https://github.com/Webolove/sortingVisualiser",
       imgSrc: "/Gallery/sortingVisualiser.png",
       imgAlt: "Sorting Visualiser"
+    }, {
+      title: "CP Hunt",
+      desc: "A platform to track upcoming coding contests across various platforms, bookmark favorite contests, and explore past contest solutions.",
+      href: "",
+      github: "https://github.com/Webolove/CPHunt",
+      imgSrc: "/Gallery/cphunt.png",
+      imgAlt: "CP Hunt"
     }
   ],
   Web3: [
@@ -130,6 +137,13 @@ const myProj = {
       github: "https://github.com/Webolove/sortingVisualiser",
       imgSrc: "/Gallery/sortingVisualiser.png",
       imgAlt: "Sorting Visualiser"
+    }, {
+      title: "CP Hunt",
+      desc: "A platform to track upcoming coding contests across various platforms, bookmark favorite contests, and explore past contest solutions.",
+      href: "",
+      github: "https://github.com/Webolove/CPHunt",
+      imgSrc: "/Gallery/cphunt.png",
+      imgAlt: "CP Hunt"
     }
   ]
 }
