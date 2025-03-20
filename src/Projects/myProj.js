@@ -55,7 +55,7 @@ const myProj = {
       desc: "A platform to track upcoming coding contests across various platforms, bookmark favorite contests, and explore past contest solutions.",
       href: "",
       github: "https://github.com/Webolove/CPHunt",
-      imgSrc: "/Gallery/cphunt.png",
+      imgSrc: "/Gallery/CPHunt.png",
       imgAlt: "CP Hunt"
     }
   ],
@@ -142,7 +142,7 @@ const myProj = {
       desc: "A platform to track upcoming coding contests across various platforms, bookmark favorite contests, and explore past contest solutions.",
       href: "",
       github: "https://github.com/Webolove/CPHunt",
-      imgSrc: "/Gallery/cphunt.png",
+      imgSrc: "/Gallery/CPHunt.png",
       imgAlt: "CP Hunt"
     }
   ]
