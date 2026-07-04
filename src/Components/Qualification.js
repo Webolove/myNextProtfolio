@@ -8,7 +8,7 @@ import { MdWorkOutline } from "react-icons/md";
 import { IoCalendarOutline } from "react-icons/io5";
 
 export default function Qualification({ theme }) {
-    const [activeTab, setActiveTab] = useState("Education");
+    const [activeTab, setActiveTab] = useState("Work");
 
     const h_and_title = !theme ? 'text-light_text_primary text-xl' : 'text-dark_text_primary text-xl';
     const timeline_icon_color = !theme ? 'bg-light_profile_bg' : 'bg-dark_profile_bg';
@@ -23,18 +23,67 @@ export default function Qualification({ theme }) {
 
             <div className="qualification__container ">
                 <div className="qualification__tabs">
-                    <div className={`qualification__button flex gap-1 place-items-center justify-between border border-[2px] border-transparent rounded-[12px] ${activeTab == "Education" ? 'active_tab border border-[2px] border-[crimson]' : 'Underline'} ${!theme ? 'text-light_text_secondary' : 'text-dark_text_secondary'} transition duration-200`} id="education" onClick={() => setActiveTab("Education")}>
-                        <RiGraduationCapLine className='qualification__icon' />
-                        <span>Education</span>
-                    </div>
-
                     <div className={`qualification__button flex gap-1 place-items-center justify-between border border-[2px] border-transparent rounded-[12px] ${activeTab == "Work" ? 'active_tab border border-[2px] border-[crimson]' : 'Underline'} ${!theme ? 'text-light_text_secondary' : 'text-dark_text_secondary'} transition duration-200`} id="work" onClick={() => setActiveTab("Work")}>
                         <MdWorkOutline className='qualification__icon' />
                         <span>Work</span>
                     </div>
+
+                    <div className={`qualification__button flex gap-1 place-items-center justify-between border border-[2px] border-transparent rounded-[12px] ${activeTab == "Education" ? 'active_tab border border-[2px] border-[crimson]' : 'Underline'} ${!theme ? 'text-light_text_secondary' : 'text-dark_text_secondary'} transition duration-200`} id="education" onClick={() => setActiveTab("Education")}>
+                        <RiGraduationCapLine className='qualification__icon' />
+                        <span>Education</span>
+                    </div>
                 </div>
 
                 <div className="qualification__sections">
+                    <div className={`qualification__content  ${activeTab == "Work" && 'qualification__active'}`} id="Work" >
+                        <div className={`timeline ${timeline_after_color}`} id="Achievements">
+                            <div className="timeline_item">
+                                <div className={`timeline_icon ${timeline_icon_color}`}>
+                                    <div className="skill__circle"></div>
+                                </div>
+                                <div className={`timeline_info ${timeline_info_color}`}>
+                                    <h3 className={`timeline_name ${h_and_title}`}>Systems Engineer</h3>
+                                    <p className={`qualification__from ${qualification_text_color}`}>Tata Consultancy Services<br /></p>
+                                    <div className='inline-block'>
+                                        <div className="qualification__calendar">
+                                            <IoCalendarOutline className='inline-block' />
+                                            <span>Dec. 2025 - Present</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <div className="timeline_item">
+                                <div className={`timeline_icon ${timeline_icon_color}`}>
+                                    <div className="skill__circle"></div>
+                                </div>
+                                <div className={`timeline_info ${timeline_info_color}`}>
+                                    <h3 className={`timeline_name ${h_and_title}`}>Web Dev Co-lead</h3>
+                                    <p className={`qualification__from ${qualification_text_color}`}>IEMCC<br />Kolkata.</p>
+                                    <div className='inline-block'>
+                                        <div className="qualification__calendar">
+                                            <IoCalendarOutline className='inline-block' />
+                                            <span>2022 - Present.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> */}
+                            <div className="timeline_item">
+                                <div className={`timeline_icon ${timeline_icon_color}`}>
+                                    <div className="skill__circle"></div>
+                                </div>
+                                <div className={`timeline_info ${timeline_info_color}`}>
+                                    <h3 className={`timeline_name ${h_and_title}`}>Web Dev Co-lead</h3>
+                                    <p className={`qualification__from ${qualification_text_color}`}>IEMCC<br />Kolkata.</p>
+                                    <div className='inline-block'>
+                                        <div className="qualification__calendar">
+                                            <IoCalendarOutline className='inline-block' />
+                                            <span>2022 - Present.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className={`qualification__content ${activeTab == "Education" && 'qualification__active'}`} id="Education">
                         <div className={`timeline ${timeline_after_color}`} id="Achievements">
                             <div className="timeline_item">
@@ -86,25 +135,6 @@ export default function Qualification({ theme }) {
                                         <div className="qualification__calendar">
                                             <IoCalendarOutline className='inline-block' />
                                             <span>2007 - 2018.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={`qualification__content  ${activeTab == "Work" && 'qualification__active'}`} id="Work" >
-                        <div className={`timeline ${timeline_after_color}`} id="Achievements">
-                            <div className="timeline_item">
-                                <div className={`timeline_icon ${timeline_icon_color}`}>
-                                    <div className="skill__circle"></div>
-                                </div>
-                                <div className={`timeline_info ${timeline_info_color}`}>
-                                    <h3 className={`timeline_name ${h_and_title}`}>Web Dev Co-lead</h3>
-                                    <p className={`qualification__from ${qualification_text_color}`}>IEMCC<br />Kolkata.</p>
-                                    <div className='inline-block'>
-                                        <div className="qualification__calendar">
-                                            <IoCalendarOutline className='inline-block' />
-                                            <span>2022 - Present.</span>
                                         </div>
                                     </div>
                                 </div>
