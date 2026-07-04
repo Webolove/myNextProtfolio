@@ -65,14 +65,13 @@ export default function Skills({ theme }) {
 
             <div className={`skills_right ${theme && 'text-light_text_inverse'}`} data-aos="zoom-in">
                 <TagCloud
-                    
                     options={(w) => ({
                         radius: Math.min(500, w.innerWidth, w.innerHeight) / 2,
                         maxSpeed: "fast",
                     })}
                 >
                     {[
-                        'HTML', 'CSS', 'JavaScript', 'ReactJs', 'ExpressJs', 'MongoDB', 'NodeJs', 'Bootstrap', 'C/C++', 'Java', 'Nextjs', 'tailwindCss', 'NFT'
+                        'HTML', 'CSS', 'JavaScript', 'ReactJs', 'ExpressJs', 'MongoDB', 'NodeJs', 'Bootstrap', 'C/C++', 'Java', 'Nextjs', 'tailwindCss', 'Kinaxis'
                     ]}
                 </TagCloud>
             </div>
